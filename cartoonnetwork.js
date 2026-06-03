@@ -29,7 +29,7 @@ const titles = [
   "Freakazoid!",
   "Dexter's Laboratory",
   "Codename: Kids Next Door",
-  "Ben 10",
+  "Ben 10 2005",
   "Ben 10: Alien Force",
   "Ben 10: Ultimate Alien",
   "Ben 10: Omniverse",
@@ -39,7 +39,7 @@ const titles = [
   "The Powerpuff Girls",
   "Samurai Jack",
   "The Amazing World of Gumball",
-  "ThunderCats",
+  "ThunderCats 2011",
 
   // DC
   "Batman: The Animated Series",
@@ -56,12 +56,13 @@ const titles = [
   "Scooby-Doo, Where Are You!",
   "Scooby-Doo! Mystery Incorporated",
   "Be Cool, Scooby-Doo!",
+  "Velma"
 
   // Warner
   "Animaniacs",
   "Pinky and the Brain",
   "Pinky, Elmyra & the Brain",
-  "Tiny Toon Adventures",
+  "Tiny Toons: Looniversity",
   "Duck Dodgers",
   "The Looney Tunes Show",
 
