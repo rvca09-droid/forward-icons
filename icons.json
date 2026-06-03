@@ -5,6 +5,14 @@
     {
       "name": "WWE",
       "url": "https://raw.githubusercontent.com/rvca09-droid/forward-icons/main/WWE.png"
+    },
+    {
+      "name": "Crunchyroll",
+      "url": "https://raw.githubusercontent.com/rvca09-droid/forward-icons/main/crunchyroll.png"
+    },
+    {
+      "name": "ViX",
+      "url": "https://raw.githubusercontent.com/rvca09-droid/forward-icons/main/vix.png"
     }
   ]
 }
