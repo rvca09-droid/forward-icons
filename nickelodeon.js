@@ -42,7 +42,7 @@ const titles = [
 
   // Live Action
   "Clarissa Explains It All",
-  "are you afraid of the dark
+  "Are you afraid of the dark, 
   "Kenan & Kel",
   "Drake & Josh",
   "iCarly",
