@@ -34,6 +34,7 @@ const titles = [
   "Ben 10: Ultimate Alien",
   "Ben 10: Omniverse",
   "Courage the Cowardly Dog",
+  "Johnny Bravo",  
   "The Grim Adventures of Billy & Mandy",
   "The Powerpuff Girls",
   "Samurai Jack",
