@@ -1,7 +1,7 @@
 WidgetMetadata = {
   id: "alexis.cartoonnetwork",
   title: "Cartoon Network Alexis",
-  version: "1.0.0",
+  version: "1.1.0",
   requiredVersion: "0.0.1",
   description: "Lista personalizada de Cartoon Network para Forward",
   author: "Alexis",
@@ -14,7 +14,7 @@ WidgetMetadata = {
       params: [
         {
           name: "language",
-          title: "Language",
+          title: "Idioma",
           type: "language",
           value: "es-MX"
         }
@@ -23,62 +23,54 @@ WidgetMetadata = {
   ]
 };
 
-const titles = [
-  "Freakazoid!",
-  "Dexter's Laboratory",
-  "Codename: Kids Next Door",
-  "Ben 10",
-  "Courage the Cowardly Dog",
-  "The Grim Adventures of Billy & Mandy",
-  "The Powerpuff Girls",
-  "Justice League",
-  "The Flintstones",
-  "The Jetsons",
-  "Teen Titans",
-  "Scooby-Doo, Where Are You!",
-  "The Amazing World of Gumball",
-  "Batman: The Animated Series",
-  "Superman: The Animated Series",
-  "Pinky and the Brain",
-  "Tiny Toon Adventures",
-  "Samurai Jack",
-  "Animaniacs",
-  "Pinky, Elmyra & the Brain",
-  "Tom and Jerry"
-];
+async function cartoonNetwork() {
+  return [
 
-async function cartoonNetwork(params = {}) {
-  const language = params.language || "es-MX";
-  let results = [];
+    // Cartoon Network clásicos
+    { id: 314, type: "tmdb" },      // Fenomenoide
+    { id: 387, type: "tmdb" },      // El laboratorio de Dexter
+    { id: 2705, type: "tmdb" },     // KND
+    { id: 30984, type: "tmdb" },    // Coraje el perro cobarde
+    { id: 3937, type: "tmdb" },     // Billy y Mandy
+    { id: 652, type: "tmdb" },      // Las Chicas Superpoderosas
+    { id: 4614, type: "tmdb" },     // Samurai Jack
+    { id: 37606, type: "tmdb" },    // El Increíble Mundo de Gumball
 
-  for (const title of titles) {
-    try {
-      const response = await Widget.tmdb.get("search/tv", {
-        params: {
-          query: title,
-          language: language
-        }
-      });
+    // Ben 10
+    { id: 4686, type: "tmdb" },     // Ben 10 (2005)
+    { id: 8067, type: "tmdb" },     // Ben 10 Alien Force
+    { id: 34860, type: "tmdb" },    // Ben 10 Ultimate Alien
+    { id: 4682, type: "tmdb" },     // Ben 10 Omniverse
 
-      if (response && response.results && response.results.length > 0) {
-        const item = response.results[0];
+    // DC
+    { id: 1604, type: "tmdb" },     // Batman
+    { id: 513, type: "tmdb" },      // Superman
+    { id: 1637, type: "tmdb" },     // Liga de la Justicia
+    { id: 3611, type: "tmdb" },     // Jóvenes Titanes (2003)
+    { id: 2288, type: "tmdb" },     // Batman del Futuro
+    { id: 3218, type: "tmdb" },     // Krypto el Superperro
+    { id: 44006, type: "tmdb" },    // Green Lantern Animated Series
+    { id: 67198, type: "tmdb" },    // Justice League Action
+    { id: XXXXX, type: "tmdb" },    // Bat-Fam
 
-        results.push({
-          id: item.id,
-          type: "tmdb",
-          title: item.name,
-          description: item.overview,
-          releaseDate: item.first_air_date,
-          backdropPath: item.backdrop_path,
-          posterPath: item.poster_path,
-          rating: item.vote_average,
-          mediaType: "tv"
-        });
-      }
-    } catch (error) {
-      console.error("Error buscando:", title, error);
-    }
-  }
+    // Scooby-Doo
+    { id: 1924, type: "tmdb" },     // Scooby-Doo
+    { id: 18123, type: "tmdb" },    // Scooby-Doo Mystery Incorporated
+    { id: 62106, type: "tmdb" },    // Be Cool Scooby-Doo
+    { id: 94954, type: "tmdb" },    // Velma
 
-  return results;
+    // Warner Bros
+    { id: 4339, type: "tmdb" },     // Animaniacs
+    { id: 1996, type: "tmdb" },     // Pinky y Cerebro
+    { id: XXXXX, type: "tmdb" },    // Pinky, Elvira y Cerebro
+    { id: 1995, type: "tmdb" },     // Tiny Toon Adventures
+    { id: 3767, type: "tmdb" },     // Duck Dodgers
+    { id: 37664, type: "tmdb" },    // The Looney Tunes Show
+
+    // Otros
+    { id: 34391, type: "tmdb" },    // ThunderCats 2011
+    { id: XXXXX, type: "tmdb" },    // DreamWorks Dragons
+    { id: 45140, type: "tmdb" },    // Teen Titans Go!
+
+  ];
 }
