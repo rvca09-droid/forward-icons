@@ -1,10 +1,10 @@
 {
-  "name": "Canales Retro",
+  "name": "Plataformas",
   "description": "Biblioteca de iconos para Forward",
   "icons": [
     {
-      "name": "Nickelodeon",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Nickelodeon_2023_logo.svg"
+      "name": "WWE",
+      "url": "https://raw.githubusercontent.com/rvca09-droid/forward-icons/main/wwe.png"
     }
   ]
 }
