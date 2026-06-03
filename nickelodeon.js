@@ -31,9 +31,9 @@ const titles = [
   "Avatar: The Last Airbender",
   "Danny Phantom",
   "SpongeBob SquarePants",
-  "Rugrats 1991",
+  "Rugrats",
   "All Grown Up!",
-  "Rugrats 2021",
+  "Rugrats: 2021",
   "The Fairly OddParents",
 
   // Tortugas Ninja
@@ -42,6 +42,7 @@ const titles = [
 
   // Live Action
   "Clarissa Explains It All",
+  "are you afraid of the dark
   "Kenan & Kel",
   "Drake & Josh",
   "iCarly",
@@ -52,8 +53,6 @@ const titles = [
   // Nuevas
   "Kamp Koral: SpongeBob's Under Years",
 
-  // Paramount+
-  "The Midnight Club"
 ];
 
 async function nickelodeon(params = {}) {
