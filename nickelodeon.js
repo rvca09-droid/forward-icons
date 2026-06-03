@@ -1,7 +1,7 @@
 WidgetMetadata = {
   id: "alexis.nickelodeon",
   title: "Nickelodeon Alexis",
-  version: "2.0.0",
+  version: "1.0.0",
   requiredVersion: "0.0.1",
   description: "Colección personalizada de Nickelodeon para Forward",
   author: "Alexis",
