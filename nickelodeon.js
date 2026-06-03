@@ -1,7 +1,7 @@
 WidgetMetadata = {
   id: "alexis.nickelodeon",
   title: "Nickelodeon Alexis",
-  version: "1.0.0",
+  version: "1.0.1",
   requiredVersion: "0.0.1",
   description: "Colección personalizada de Nickelodeon para Forward",
   author: "Alexis",
@@ -33,7 +33,7 @@ const titles = [
   "SpongeBob SquarePants",
   "Rugrats",
   "All Grown Up!",
-  "Rugrats: 2021",
+  "Rugrats 2021",
   "The Fairly OddParents",
 
   // Tortugas Ninja
@@ -42,7 +42,7 @@ const titles = [
 
   // Live Action
   "Clarissa Explains It All",
-  "Are you afraid of the dark, 
+  "Are You Afraid of the Dark?",
   "Kenan & Kel",
   "Drake & Josh",
   "iCarly",
@@ -51,8 +51,7 @@ const titles = [
   "Big Time Rush",
 
   // Nuevas
-  "Kamp Koral: SpongeBob's Under Years",
-
+  "Kamp Koral: SpongeBob's Under Years"
 ];
 
 async function nickelodeon(params = {}) {
