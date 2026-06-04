@@ -32,7 +32,7 @@ const items = [
   { title: "Creepshow", type: "tv" },
   { title: "Hell Motel", type: "tv" },
   { title: "The Dead Lands", type: "tv" },
-  { title: "When Evil Lurks", type: "movie" },
+  { title: "Cuando acecha la maldad", type: "movie" },
   { title: "Birth/Rebirth", type: "movie" },
   { title: "Clown in a Cornfield", type: "movie" },
   { title: "Oddity", type: "movie" },
