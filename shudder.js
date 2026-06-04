@@ -45,7 +45,6 @@ const items = [
   { title: "Night Patrol", type: "movie" },
   { title: "Whistle", type: "movie" },
   { title: "The Crucifix: Blood of the Exorcist", type: "movie" },
-  { title: "The Clay Man", type: "movie" },
   { title: "Fear Cabin: The Last Weekend", type: "movie" },
   { title: "Lilly Lives Alone", type: "movie" },
   { title: "Tenants", type: "movie" },
@@ -60,7 +59,6 @@ const items = [
   { title: "Wayang Puaka", type: "movie" },
   { title: "Possum", type: "movie" },
   { title: "Caveat", type: "movie" },
-  { title: "Ghost Station", type: "movie" }
 ];
 
 async function shudder(params = {}) {
